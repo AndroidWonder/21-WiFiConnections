@@ -3,6 +3,8 @@
  * It scans upon opening the app and then when the refresh menu option is clicked.
  * It uses a broadcast receiver to display the results of the scan.
  * There will be 2 menu items on the Action Bar - one with text and one with an icon.
+ *
+ * Be sure to grant Location Permission in Settings for it to work.
  */
 
 package com.course.example.wificonnections;
