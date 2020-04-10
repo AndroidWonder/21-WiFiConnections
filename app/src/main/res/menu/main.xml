@@ -7,5 +7,5 @@
         android:title="Refresh"
         android:icon="@drawable/ic_launcher"
         app:showAsAction="always"/>
-    
+
 </menu>
