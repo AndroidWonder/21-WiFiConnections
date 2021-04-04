@@ -18,6 +18,7 @@ import android.content.IntentFilter;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -49,8 +50,11 @@ public class MainActivity extends Activity {
                 // If wifi disabled then enable it
                 Toast.makeText(MainActivity.this, "wifi is disabled..making it enabled",
                     Toast.LENGTH_LONG).show();
-                 
-                mainWifi.setWifiEnabled(true);
+
+                //toggle WiFi enabled
+               Intent panelIntent = new Intent(Settings.Panel.ACTION_WIFI);
+                startActivityForResult(panelIntent,1);
+            //    mainWifi.setWifiEnabled(true); deprecated at API 30
             } 
         
        // create broadcast receiver object
