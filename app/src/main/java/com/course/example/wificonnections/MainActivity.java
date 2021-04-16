@@ -19,6 +19,7 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -65,6 +66,19 @@ public class MainActivity extends Activity {
        registerReceiver(receiverWifi, new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
        mainWifi.startScan();
        mainText.setText("Starting Scan...");
+    }
+
+    protected void onActivityResult(int requestCode,
+                                    int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+
+            Log.e("IntentTest", "Result OK for " + requestCode);
+            Toast.makeText(this, "Result OK for " + requestCode, Toast.LENGTH_LONG).show();
+        } else {
+            Log.e("IntentTest", "Result NOT OK for " + requestCode);
+            Toast.makeText(this, "Result NOT OK for " + requestCode, Toast.LENGTH_LONG).show();
+        }
     }
  
     public boolean onCreateOptionsMenu(Menu menu) {
