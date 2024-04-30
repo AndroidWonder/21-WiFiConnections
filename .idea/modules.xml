@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/21-WiFiConnections.iml" filepath="$PROJECT_DIR$/21-WiFiConnections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/21-WiFiConnections.iml" filepath="$PROJECT_DIR$/.idea/modules/21-WiFiConnections.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/21-WiFiConnections.app.unitTest.iml" />
     </modules>
   </component>
 </project>

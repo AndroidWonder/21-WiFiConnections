@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '30.0.3'
+    compileSdk 34
+
 
     defaultConfig {
         applicationId "com.course.example.wificonnections"
         minSdkVersion 26
-        targetSdkVersion 30
+        targetSdk 34
     }
 
     buildTypes {
@@ -16,6 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    namespace 'com.course.example.wificonnections'
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildToolsVersion '35.0.0 rc3'
 }
 
 dependencies {
